@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 327px;
+  height: 442px;
+}
+#first {
+  background-color: #e28625;
+}
+#second {
+  background-color: #006971;
+}
+#third {
+  background-color: #004140;
+}
+
+.icon {
+  width: 64px;
+  height: 40px;
+  margin-left: 48px;
+  margin-top: 49px;
+}
+.icon img {
+  width: 64px;
+  height: 40px;
+}
+
+.container .title {
+  width: 68px;
+  height: 48px;
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 42px;
+  margin-left: 48px;
+  margin-top: 34px;
+}
+.container .content {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  font-size: 15.2px;
+  color: white;
+  width: 231px;
+  margin-left: 48px;
+  margin-top: 25px;
+  line-height: 25px;
+}
+
+.container .button a {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  width: 146px;
+  height: 48px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 48px;
+  margin-top: 25px;
+  background-color: white;
+}
+#btnone {
+  color: #e28625;
+}
+#btntwo {
+  color: #006971;
+}
+#btnthree {
+  color: #004140;
+}
+#btnone:hover {
+  color: white;
+}
+#btntwo:hover {
+  color: white;
+}
+#btnthree:hover {
+  color: white;
+}
+
+.container .button a:hover {
+  background: none;
+  border: 1px solid white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  visibility: hidden;
+}
+@media screen and (min-width: 1028px) {
+  main {
+    flex-direction: row;
+  }
+  footer {
+    visibility: visible;
+  }
+}
